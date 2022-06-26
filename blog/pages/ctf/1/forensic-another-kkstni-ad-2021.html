@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../../assets/img/logo.png" sizes="50x50" type="image/png">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-one-dark.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <title>Blog | LazyCat - Team</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="../../../../index.html"><img src="../../../../assets/img/logo.png" alt="Lazy Cat"></a>
+                </div>
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <ul>
+                        <li class="nav-item"><a href="../../../../index.html">Back To Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Write Blog -->
+    <div class="team-section sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Blog</h2>
+                </div>
+                <div class="section-isi">
+                    <h3>A. [CTF KKS-TNI AD 2021] Write Up Forensic Another User</h3>
+                    <small>26-06-2022</small>
+                    <img src="img/header.png" alt="kkstni">
+                    <p>Diberikan sebuah file bernama <b>vm_mahasiswa.zip</b> sebesar 2GB yang ketika diekstrak
+                    berisi sebuah virtual machine bernama <b>Miss_us_final.ova</b> yang disita dari terduga
+                    pelaku peretasan</p>
+                    <img src="img/1.png">
+                    <p>Kemudian kita bisa membukanya menggunakan dengan virtual box. Seperti di soal kita memiliki
+                    akses dengan menggunakan credential <b><i>guest:guest</i></b>. Di dalam kasus ini kita disuruh
+                    mencari akun selain akun guest.</p>
+                    <img src="img/2.png">
+                    <p>lalu langsung mencari beberapa informasi user pada sistem dengan melihat file
+                    <b><i>/etc/passwd</i></b>.</p>
+                    <img src="img/3.png">
+                    <p>Dan kita akan mendapatkan beberapa nama akun root,ellen dan guest. Kemudian kita bisa mencoba
+                    melihat informasi tentang kata sandi pengguna pada file <b>/etc/shadow.</b></p>
+                    <img src="img/4.png">
+                    <p>Terdapat 2 akun yang memiliki password terenkripsi SHA-512. Karena kita sudah login
+                    menggunakan akun guest. Berarti kita harus mencari password dari akun ellen.
+                    Ini sangat mudah. Saya langsung berpikir untuk melakukan brute force SSH server
+                    untuk mencari password dari akun ellen dengan menggunakan modul
+                    <i>auxiliary/scanner/ssh/ssh_login</i> yang terdapat di metasploit</p>
+                    <img src="img/5.png">
+                    <p>Bingo!!! Kita mendapatkan password dari akun ellen yaitu <b>ihateyou</b> Ini biasa disebut
+                    dengan weak password. Cukup dengan menggunakan wordlist yang tersebar di google
+                    kita bisa mendapatkannya.
+                    Lalu kita mencoba test login dengan credential yang kita dapat tadi dan itu berhasil.</p>
+                    <img src="img/6.png">
+                    <p><b>Flag : KKST2021{ellen:ihateyou}</b></p>
+                    <br>
+                    <small><i>Author: Lazy Cat Team</i></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item">
+                    <h3>Our Location</h3>
+                    <p>JL. KL. Yos Sudarso Km. 6,5 No. 3-A <br> Indonesia - Sumatera Utara 20241</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Lazt Cat Team</h3>
+                    <p>Layanan Cyber Security<br>#StaySecure</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Contact Us</h3>
+                    <p>+628-0000-0001</p>
+                    <p>test@gmail.com</p>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="copyright">
+                    &copy;2022 - Create By Lazy Cat Team
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+    <script src="../../../../assets/js/script.js"></script>
+</body>
+
+</html>

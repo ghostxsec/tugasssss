@@ -1,0 +1,42 @@
+body {
+	margin:0;
+	margin-top: 10px;
+}
+.img-item {
+	width: 150px;
+} 
+
+.caption{
+	font-size: 15px;
+	text-align: center;
+	margin-top: 8px;
+	padding-left: 80px;
+	padding-right:90px;
+}
+
+table {
+	text-align:center; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+h1 {
+	text-align:center;
+}
+p {
+	color:grey;
+	text-align:center;
+}
+h3 {
+	text-align:center;
+	padding-top: 18px;
+	padding-bottom: 30px;
+}
+
+.sertifikat {
+	color:white;
+	font-size:20px;
+}

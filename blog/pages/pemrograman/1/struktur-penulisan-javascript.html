@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../../assets/img/logo.png" sizes="50x50" type="image/png">
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-one-dark.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <title>Blog | LazyCat - Team</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="../../../../index.html"><img src="../../../../assets/img/logo.png" alt="Lazy Cat"></a>
+                </div>
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <ul>
+                        <li class="nav-item"><a href="../../../../index.html">Back To Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Write Blog -->
+    <div class="team-section sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Blog</h2>
+                </div>
+                <div class="section-isi">
+                    <h3>A. Pengenalan Javascript</h3>
+                    <small>23-02-2022</small>
+                    <img src="img/header.jpg">
+                    <p>Javascript adalah bahasa pemrograman yang digunakan untuk membuat program yang digunakan agar 
+                        dokumen HTML yang ditampilkan dalam browser menjadi lebih intraktif.</p>
+                    <p>Javascript merupakan bahasa pemrograman yang tidak membutuhkan lisensi untuk dapat menggunakannya Namun, seiring
+                    perkembangan zaman, javascript tidak hanya berjalan di atas browser saja. Javascript juga dapat digunakan pada sisi
+                    Server, Game, IoT, Desktop, dsb.</p>
+                    <h3>B. Struktur Penulisan Javascript</h3>
+                    <p>Penulisan program JavaScript harus diawali dengan tag <code class="language-html">&lt;script language="JavaScript"&gt;</code> 
+                        dan diakhiri dengan tag <code class="language-html">&lt;/script&gt;</code>.</p>
+                    <p>Silahkan buka teks editor, kemudian buat file beru bernama <code class="language-html">hello_world.html</code> dan isi dengan kode berikut:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hello World Javascript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;
+console.log("Saya belajar Javascript")
+document.write("Hello World!");
+&lt;/script&gt;
+&lt;/body&gt
+&lt;/html&gt;
+</code></pre>
+                <p>Silahkan disimpan dengan nama <code class="language-html">hello_world.html</code> kemudian buka file tersebut dengan web 
+                browser.</p>
+                <img src="img/contoh1.png" alt="contoh">
+                <p>Pada cara ini, kita menggunakan tag <code class="language-html">&lt;script&gt;</code> untuk menempelkan <i>(embed)</i> kode Javascript pada HTML. Tag ini dapat ditulis di dalam tag 
+                    <code class="language-html">&lt;head&gt;</code> dan <code class="language-html">&lt;body&gt;</code>. 
+                </p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Belajar Javascript dari Nol&lt;/title&gt;
+&lt;script&gt;
+// ini adalah penulisan kode javascript
+// di dalam tag &lt;head&gt;
+console.log("Hello JS dari Head");
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Tutorial Javascript untuk Pemula&lt;/p&gt;
+&lt;script&gt; // ini adalah penulisan kode javascript
+// di dalam tag &lt;body&gt; console.log("Hello JS dari body");
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                <p>Mana yang lebih bagus, ditulis di dalam <code class="language-html">&lt;head&gt;</code>
+                atau <code class="language-html">&lt;body&gt;</code> ?. Banyak yang merekomendasikan menuliskannya di dalam <code class="language-html">&lt;body&gt;</code>
+                karena akan membuat web di-load lebih cepat.</p>
+                <h3>C. Penulisan Kode javascript Inline</h3>
+                <p>Pada cara ini, kita akan menulis kode javascript di dalam atribut HTML. Cara ini biasanya digunakan untuk memanggil
+                suatu fungsi pada event tertentu. <i>Misal: saat link diklik.</i><br>
+                Contoh:</p>
+<pre>
+<code class="language-html">&lt;a href="#" onclick="alert('yey!')"&gt;Klik aku!&lt;/a&gt;</code>
+</pre>
+                <p>Atau bisa juga seperti ini:</p>
+<pre>
+<code class="language-html">&lt;a href="javascript:alert('yey!')"&gt;Klik aku!&lt;/a&gt;</code>
+</pre>
+                <p>Menampilkan hasil sebagai berikut:</p>
+                <img src="img/contoh2.png" alt="contoh2">
+                <p>Untuk lanjutan tentang javascript ini akan segera dibuat.</p>
+                <br>
+                <small><i>Author: Lazy Cat Team</i></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item">
+                    <h3>Our Location</h3>
+                    <p>JL. KL. Yos Sudarso Km. 6,5 No. 3-A <br> Indonesia - Sumatera Utara 20241</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Lazt Cat Team</h3>
+                    <p>Layanan Cyber Security<br>#StaySecure</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Contact Us</h3>
+                    <p>+628-0000-0001</p>
+                    <p>test@gmail.com</p>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="copyright">
+                    &copy;2022 - Create By Lazy Cat Team
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+<script src="../../../../assets/js/script.js"></script>
+</body>
+</html>

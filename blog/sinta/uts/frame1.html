@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame 1</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body bgcolor="grey">
+    <script>
+      
+            function tekan()
+            {
+                var namastr =(document.fform.nama.value);
+                var alamatstr =(document.fform.alamat.value);
+                var nimstr =(document.fform.nim.value);
+                var kelasstr =(document.fform.kelas.value);
+                var umurstr =(document.fform.umur.value);
+                var jenisstr =(document.fform.jenis.value);
+                var agamastr =(document.fform.agama.value);
+                
+                document.fform.onama.value = namastr;
+                document.fform.oalamat.value = alamatstr;
+                document.fform.onim.value = nimstr;
+                document.fform.okelas.value = kelasstr;
+                document.fform.oumur.value = umurstr;
+                document.fform.ojenis.value = jenisstr;
+                document.fform.oagama.value = agamastr;
+                 }
+    </script>
+    <form name ="fform">
+        <h1> BIODATA MAHASISWA </h1><hr>
+        <pre>
+NAMA         : <input type="text" size="25" name="nama" placeholder="Nama...">
+ALAMAT       : <input type="text" size="25" name="alamat"placeholder="Alamat...">
+NIM          : <input type="text" size="25" name="nim" placeholder="Nim...">
+KELAS        : <input type="text" size="25" name="kelas" placeholder="Kelas...">
+Umur         : <input type="text" size="25" name="umur" placeholder="Umur...">
+Jenis kelamin: <input type="text" size="25" name="jenis" placeholder="Jenis kelamin...">
+agama        : <input type="text" size="25" name="agama" placeholder="Agama...">
+
+        </pre>
+        <br>
+        <input type="button" value="kirim" onclick="tekan()">
+        
+        <input type="reset" value="ulang">
+        <h3>Data Mahasiswa</h3>
+        <pre>
+Jadi Nama Anda Adalah   : <input type="text" size="25" name="onama">
+Alamat Anda di          : <input type="text" size="25" name="oalamat">
+Nim Anda Adalah         : <input type="text" size="25" name="onim">
+Kelas Anda              : <input type="text" size="25" name="okelas">
+Umur Anda               : <input type="text" size="25" name="oumur">
+jenis kelamin           : <input type="text" size="25" name="ojenis">
+Agama Anda              : <input type="text" size="25" name="oagama">
+
+
+        </pre>
+        
+    </form>
+</body>
+</html>

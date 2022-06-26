@@ -1,0 +1,131 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>UAS  pemograman web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+        <center>
+          <h2>MARQUEE</h2>
+        </center>
+     <hr>
+        <p>Marquee adalah salah satu kode bahasa program HTML, untuk membuat efek tulisan / gambar menjadi berjalan atau bergerak.</p>
+        <p>Tag marquee memiliki atribut sebagai berikut:</p>
+       <table border="4" cellpadding="10" cellspacing=0>
+      <tr>
+        <td>Atribut</td>
+        <td>value</td>
+        <td>Keterangan</td>
+      </tr>
+      <tr>
+        <td>behavior</td>
+        <td>scroll,slide,alternate</td>
+        <td>Mendefinisikan jenis scrolling</td>
+      </tr>
+      <tr>
+        <td>direction</td>
+        <td>up,down,left,right</td>
+        <td>Mendefinisikan arah scrolling</td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td>pixel atau %</td>
+        <td>Menyatakan tinggi marquee</td>
+      </tr>
+       </table>
+       <p>
+        Sebagai catatan marquee memiliki 3 sifat atau behaviour: <br>
+        - Scroll : marquee menghilang ketika menabrak sisi kiri (kode default) <br>
+        - Slide : marquee berhenti ketika menabrak sisi kiri <br>
+        - Alternate : marquee memantul ketika menabrak sisi <br>
+
+       </p>
+
+       <h2>jenis-jenis Marquee:</h2>
+
+       <h3>1. Bergerak ke kiri:</h3>
+       <p>syntax:</p>
+          <pre><code>
+             &lt;marquee&gt;&lt;h3&gt;Kelompok 2 &lt;/h3&gt;&lt;/marquee&gt;
+           </code></pre>
+       <p>Output:</p>
+          <marquee><h3>Kelompok 2 </h3></marquee>
+      
+
+       <h3>2. Bergerak ke kanan:</h3>
+       <p>syntax:</p>
+       <pre><code>
+        &lt;marquee direction=&quot;right&quot;&gt;&lt;h3&gt;Kelompok 2 &lt;/h3&gt;&lt;/marquee&gt;
+       </code></pre>
+       <p>Output:</p>
+          <marquee direction="right"><h3>Kelompok 2 </h3></marquee>
+
+
+       <h3>3. Bergerak ke atas:</h3>
+       <p>syntax:</p>
+       <pre><code>
+        &lt;marquee direction=&quot;up&quot;&gt;&lt;h3&gt;Kelompok 2 &lt;/h3&gt;&lt;/marquee&gt;
+       </code></pre>
+       <p>Output:</p>
+        <marquee direction="up"><h3>Kelompok 2 </h3></marquee>
+      
+
+       <h3>4. Marquee dengan attribute behaviour alternate:</h3>
+       <p>syntax:</p>
+       <pre><code>
+        &lt;marquee behavior=&quot;alternate&quot;&gt;&lt;h3&gt;Kelompok 2 &lt;/h3&gt;&lt;/marquee&gt;
+       </code></pre>
+       <p>Output:</p>
+        <marquee behavior="alternate"><h3>Kelompok 2 </h3></marquee>
+     
+
+       <h3>5. Bergerak dengan kecepatan tertentu</h3>
+       <p>syntax:</p>
+       <pre><code>
+        &lt;marquee behavior=&quot;scroll&quot; direction=&quot;left&quot; scrollamount=&quot;3&quot;&gt; Slow speed&lt;/marquee&gt;
+        &lt;marquee behavior=&quot;scroll&quot; direction=&quot;left&quot; scrollamount=&quot;7&quot;&gt; Medium speed&lt;/marquee&gt;
+        &lt;marquee behavior=&quot;scroll&quot; direction=&quot;left&quot; scrollamount=&quot;15&quot;&gt; Fast speed&lt;/marquee&gt;
+       </code></pre>
+       <p>Output:</p>
+        <marquee behavior="scroll" direction="left" scrollamount="3"> Slow speed</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="7"> Medium speed</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="15"> Fast speed</marquee>
+
+        <h2>Latihan Marquee</h2>
+        <p>Tuliskan Code di bawah ini:</p>
+        <pre><code>
+          &lt;html&gt;
+          &lt;Head&gt;
+          &lt;Title&gt;membuat 
+          Marquee Pada Status bar&lt;/Title&gt;
+          &lt;/head&gt;
+          &lt;body bgcolor=&quot;lavender&quot;&gt;&lt;center&gt;
+          &lt;p&gt;&lt;font color=&quot;orange&quot; size=&quot;5&quot;&gt;Latihan Marquee Dengan JavaScript&lt;/p&gt;
+          &lt;body onload=&quot;p()&quot;&gt;
+          &lt;script languange=&quot;JavaScript&quot;&gt;
+          var pesan =&quot;Hallo Friend...Apa Khabar? &quot;;
+          var pesan2 =&quot;Welcome To My website &quot;;
+          function p()
+          {
+          document.basis.kotak.value=pesan;
+          pesan=pesan.substr(1,pesan.length)+pesan.substr(0,1);
+          pesan2=pesan2.substr(1,pesan2.length)+pesan2.substr(0,1);
+          window.status=pesan2;
+          setTimeout(&quot;p()&quot;,100);
+          }
+          &lt;/script&gt;
+            &lt;form method=&quot;post&quot; name=&quot;basis&quot;&gt;
+          &lt;input type=&quot;text&quot; name=&quot;kotak&quot; size=20&gt;
+          &lt;/form&gt;
+          &lt;/body&gt;
+          &lt;/html
+         </code></pre>
+         <p>Hasilnya Anda dapat lihat 
+          <a href="contoh.html">disini </a>
+         </p>
+        
+     </body>
+    </html>

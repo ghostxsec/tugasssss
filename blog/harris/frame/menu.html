@@ -1,0 +1,35 @@
+<html>
+<Head>
+<Title>Frame_Menu</Title>
+<style>
+   body{
+      background-image: url('wallpaper2.jpg');
+  background-repeat: no-repeat;
+  color: white;
+  
+   }
+   p{
+      font-family: 'Times New Roman', Times, serif;
+    
+   }
+</style>
+</head>
+<body>
+<script language="JavaScript">
+function menu()
+{
+
+    str="frame.html";
+ parent.fr2.location.href=str;
+}
+</script>
+<form name="fform">
+   <center><img src="logo3.png" alt="logo" width="30%"></center>   
+  
+<p>Pilih Menu Dibawah ini:</p>
+<p><input type="radio" checked name="rbmenu" value="1">Pengertian Frame</p>
+
+<p><input type="button" onclick="menu()" value="Tampilkan"> 
+</form>
+</body>
+</html>

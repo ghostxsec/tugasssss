@@ -1,0 +1,163 @@
+#box{
+    width: 960px;
+    margin: auto;
+    padding:30px;
+    }
+    
+    #header{
+    margin: 0 auto;
+    width: 960px;
+    height: 150px;
+    background-color:black;
+    }
+    
+    
+.navbar {
+  overflow: hidden;
+  background-color: green;
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: blue;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:lavender;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2bff00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}   
+
+    #judul{
+    font-size: 40px;
+    text-align: center;
+    top:50px;
+    position : relative;
+    color: #f4fd05;
+    }
+  
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      .active{
+          float: right;
+      }
+    .grid-container {
+        float: left;
+        width: 700px;
+        height: 600px;
+        background-color:pink;
+      }
+    #container{
+    margin: 5px auto;
+    width: 960px;
+    background-color:pink;
+    }
+    
+    #kiri{
+    float: left;
+    width: 660px;
+    margin :10px;
+    padding:0 10px;
+    background-color:pink;
+    }
+    
+    #kanan{
+    float: right;
+    width: 260px;
+    height: 600px;
+    background-color:;
+    text-align: center;
+    }
+    
+    
+    #footer{
+    margin: 0 auto;
+    width: 500px;
+    line-height: 500px;
+    background-color: red;
+    }
+    
+    #footer p{
+      font-size: 20px;
+      text-align: center;
+      color: white;
+    }
+    #copyright{
+    text-align: center;
+    color:#ffffff;
+    }
+    .clear
+    {
+    clear: both;
+    }
+    body{
+      background-image: url('wallpaper4.jpg');
+    }
+    pre {
+      background-color: #292E34; /* warna background */
+      border-left: 5px solid #008c5f; /* variasi border kiri */
+      padding:0; margin:.5em auto; white-space:pre; word-wrap:break-word; overflow:auto; position:relative; width:100%; -moz-tab-size:2; -o-tab-size:2; tab-size:2; word-break:normal; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none
+    }
+  pre code {
+      color: #BFBF90; /* warna huruf */
+      font-size: 12px; /* ukuran huruf */ 
+      max-height:250px; line-height:1.5em; display:block; background:none; border:none; padding:10px 15px; font-family:'source code pro',menlo,consolas,monaco,monospace; white-space:pre-wrap; overflow:auto; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text
+    }

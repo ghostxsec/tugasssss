@@ -1,0 +1,115 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>UAS  pemograman web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <center>
+          <h2>FRAME</h2>
+        </center>
+     <hr>
+        <p>Frame adalah teknik yang digunakan untuk memanggil beberapa halaman kemudian ditampilkan dalam satu halaman.</p>
+    <P>Format Penulisan tag Frame :</P>
+    <pre><code>
+        &lt;frameset&gt;... frameset&gt;
+      </code></pre>
+    <p>Format penulisan elemen tag frame :</p>
+    <pre><code>
+        &lt;frame&gt;... &lt;/frame&gt;
+      </code></pre>
+
+    <p>Tag Frameset memiliki atribut diantaranya :</p>
+    <p>
+       <strong>- Border</strong> : menentukan garis border <br>
+       <strong>- Cols</strong> : menentukan lebar kolom (px/%/*),dan untuk menentukan jumlah kolom yaitu memakai tanda koma(,) <br>
+       <strong>- Rows</strong> : menentukan panjang baris (px/%/*), dan untuk menentukan jumlah baris yaitu memakai tanda koma (,) <br>
+
+       </p>
+       <p>Tag Frame memiliki atribut diantaranya :</p>
+    <p>
+       <strong>- Name</strong> : untuk menentukan nama frame atau untuk target link <br>
+       <strong>- Scr</strong> : berfungsiuntuk menunjukkan/lokasi sumber file <br>
+
+       </p>
+    
+    <h2>Membuat Frame di HTML</h2>
+
+    <h4>Membuat folder baru</h4>
+    <p>buat folder baru dengan nama <strong>frame</strong></p>
+    <h4>Membuat File HTML</h4>
+    <p>Buat File baru dengan nama <strong>header.html</strong> kemudian simpan dalam folder <strong>frame</strong></p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;Head&gt;
+        &lt;Title&gt;header&lt;/Title&gt;
+        &lt;/head&gt;
+        &lt;body bgcoller=&quot;yellow&quot;&gt;
+        &lt;h1&gt;ini header &lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <p>Buat File baru dengan nama <strong>sidebar.html</strong> kemudian simpan dalam folder <strong>frame</strong></p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;Head&gt;
+        &lt;Title&gt;sidebar&lt;/Title&gt;
+        &lt;/head&gt;
+        &lt;body bgcoller=&quot;grey&quot;&gt;
+        &lt;h3&gt;ini sidebar &lt;/h3&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <p>Buat File baru dengan nama <strong>konten.html</strong> kemudian simpan dalam folder <strong>frame</strong></p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;Head&gt;
+        &lt;Title&gt;konten&lt;/Title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h3&gt;ini konten &lt;/h3&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <p>Buat File baru dengan nama <strong>footer.html</strong> kemudian simpan dalam folder <strong>frame</strong></p>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;Head&gt;
+        &lt;Title&gt;footer&lt;/Title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;center&gt;
+        &lt;h3&gt;ini footer &lt;/h3&gt;
+        &lt;/center&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <p>Buat File baru dengan nama <strong>index.html</strong> kemudian simpan dalam folder <strong>frame</strong></p>
+<pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;Head&gt;
+        &lt;Title&gt;Belajar HTML : FRAME &lt;/Title&gt;
+        &lt;/head&gt;
+        &lt;frameset rows&quot;20%,*10%&quot; border=&quot;1&quot;&gt;
+        &lt;frameset name=&quot;header&quot; src=&quot;header.html&quot;&gt;&lt;/frame&gt;
+        &lt;frameset cols=&quot;25%,*&quot; border=&quot;1&quot;&gt;
+        &lt;frameset name=&quot;sidebar&quot; src=&quot;sidebar.html&quot;&gt;&lt;/frame&gt;
+        &lt;frameset name=&quot;konten&quot; src=&quot;konten.html&quot;&gt;&lt;/frame&gt;
+        &lt;/frameset&gt;
+        &lt;frameset name=&quot;footer&quot; src=&quot;footer.html&quot;&gt;&lt;/frame&gt;
+        &lt;/frameset&gt;
+        &lt;/html&gt;
+    </code></pre>
+
+    <p>Hasilnya Anda dapat lihat 
+        <a href="index.html">disini </a>
+    </p>
+</body>
+</html>

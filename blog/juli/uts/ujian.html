@@ -1,0 +1,47 @@
+<html>
+<Head>
+<Title>membuat 
+Marquee Pada Status bar</Title>
+</head>
+<body bgcolor="White"><center>
+<p><font color="Black" size="5">UTS Pemrograman WEB</p>
+<body onload="p()">
+<script languange="JavaScript">
+    
+var pesan ="Juli Ramadhani_2012000020 ";
+var pesan2 ="Welcome To My website ";
+function p()
+{
+document.basis.kotak.value=pesan;
+
+pesan=pesan.substr(1,pesan.length)+pesan.substr(0,1);
+pesan2=pesan2.substr(1,pesan2.length)+pesan2.substr(0,1);
+window.status=pesan2;
+setTimeout("p()",100);
+}
+</script>
+  <form method="post" name="basis">
+<input type="text" name="kotak" size=20>
+</form>
+</body>
+</html>
+<html>
+    <body bgcolor="yellow">
+        <center>
+            <p><strong>Jenis-Jenis Marque</strong></p>
+            <p><strong>Efek marquee adalah suatu teknik atau pengkodean HTML yang dapat menimbulkan efek berjalan pada teks atau gambar di blog.</strong></p>
+            <center>
+            <font color="yellow" size="10">
+           <marquee direction="right"> Teks ke kanan</marquee>
+            <marquee direction="left"> Teks ke kiri</marquee>
+    <hr>
+    <h2></h2>
+    <marquee behavior="slide" width="400">Welcome</marquee><br>
+    <marquee behavior="alternate" width="400">Memantul</marquee><br>
+    <marquee direction="down">Dari Atas Ke Bawah</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="1"> Slow speed</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="10"> Medium speed</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20"> Fast speed</marquee>
+        </center>
+    </body>
+</html>
